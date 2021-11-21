@@ -177,6 +177,35 @@
 </head>
 
 <body>
+
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "104155988616122");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
     <style>
         .form-block {
             background: rgba(255,255,255,0.9)
@@ -229,7 +258,7 @@
             <div role="list" class="w-dyn-items w-row">
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/bb9cdb85-b7c1-4bec-9931-3a6da9d4aed0.png" width="270" />
+                                <img src="./icon/bb9cdb85-b7c1-4bec-9931-3a6da9d4aed0.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -247,7 +276,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/e894f8ad-8ddb-44e3-94a9-713f9550ffa2.png" width="270" />
+                                <img src="./icon/e894f8ad-8ddb-44e3-94a9-713f9550ffa2.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -265,7 +294,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/c54c9a6a-46a8-464f-9948-2c47437bb874.png" width="270" />
+                                <img src="./icon/c54c9a6a-46a8-464f-9948-2c47437bb874.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -283,7 +312,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/4932d5ca-f91c-4e96-8997-52e740ea7ac4.png" width="270" />
+                                <img src="./icon/4932d5ca-f91c-4e96-8997-52e740ea7ac4.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -301,7 +330,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/5500902c-5b9f-44f1-b44d-cfdf7c61fbe5.png" width="270" />
+                                <img src="./icon/5500902c-5b9f-44f1-b44d-cfdf7c61fbe5.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -319,7 +348,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/7e771a45-f00c-4556-83c4-7a5ee6089df6.png" width="270" />
+                                <img src="./icon/7e771a45-f00c-4556-83c4-7a5ee6089df6.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -337,7 +366,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/800ee005-48c7-44be-90f0-d67afd01f529.png" width="270" />
+                                <img src="./icon/800ee005-48c7-44be-90f0-d67afd01f529.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>
@@ -355,7 +384,7 @@
                         </div>
                         <div role="listitem" class="w-dyn-item w-col w-col-3">
                             <div data-w-id="076c595d-53c3-a059-3583-2e1496f7bd99" style="opacity:1" class="lender-block">
-                                <img src="../nhanquamienphi.co/Files21092021/images/huong-dan/icon/e0b5502c-c3ed-4a49-bca7-d7336aa4189b.png" width="270" />
+                                <img src="./icon/e0b5502c-c3ed-4a49-bca7-d7336aa4189b.png" width="270" />
                                 <div class="container-9 w-container">
                                     <p class="paragraph-7">0% Lãi suất và phí dành cho khoản vay đầu tiên</p>
                                 </div>

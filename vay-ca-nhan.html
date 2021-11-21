@@ -186,7 +186,33 @@
             margin-top: 10px;
         }
     </style>
-    
+    <!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "104155988616122");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
     <div class="wrapper">
         <div data-animation="default" class="navbar-vn w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" data-doc-height="1">
             <div class="navbar-custom-container">
@@ -451,10 +477,10 @@
 <div class="section s-hand wf-section">
     <img src="./libs/jeff/images1/slant-blue-bottom.svg" alt="blue triangle line top" class="slant-top" />
     <div class="block">
-        <img src="libs/jeff/images1/optimized-hand.jpg" alt="Click" class="hand" />
+        <img src="./libs/jeff/images1/optimized-hand.jpg" alt="Click" class="hand" />
         <div class="cta-button-holder">
             <a data-w-id="e45d0e33-2dee-4a54-f292-6652456e5619" href="#" class="link-block w-inline-block">
-                <img src="libs/jeff/images1/dot-button-icon.svg" alt="So sánh các khoản vay nhanh" class="button-icon" />
+                <img src="./libs/jeff/images1/dot-button-icon.svg" alt="So sánh các khoản vay nhanh" class="button-icon" />
                 <div class="text-block-2">
                     So sánh các khoản vay cá nhân
                 </div>
@@ -483,13 +509,13 @@
                 </div>
                 <div class="footer-social-flex">
                     <a href="#" target="_blank" class="footer-social-link-block w-inline-block">
-                        <img src="libs/jeff/images1/icon-social-facebook.svg" alt="Facebook icon" class="footer-social-icon" />
+                        <img src="./libs/jeff/images1/icon-social-facebook.svg" alt="Facebook icon" class="footer-social-icon" />
                     </a>
                     <a href="#" target="_blank" class="footer-social-link-block w-inline-block">
-                        <img src="libs/jeff/images1/icon-social-linkedin.svg" alt="LinkedIn icon" class="footer-social-icon" />
+                        <img src="./libs/jeff/images1/icon-social-linkedin.svg" alt="LinkedIn icon" class="footer-social-icon" />
                     </a>
                     <a href="#" target="_blank" class="footer-social-link-block yt w-inline-block">
-                        <img src="libs/jeff/images1/icon-social-youtube.svg" alt="" class="footer-social-icon" />
+                        <img src="./libs/jeff/images1/icon-social-youtube.svg" alt="" class="footer-social-icon" />
                     </a>
                 </div>
             </div>
